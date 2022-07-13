@@ -24,24 +24,24 @@ You'll need to set up ccls and coc by yourself since git doesn't see the problem
 4. In CocConfig insert: 
 
 {
-  2 "languageserver": {
-  3     "ccls": {
-  4       "command": "ccls",
-  5       "args": ["--log-file=/tmp/ccls.log", "-v=1"],
-  6       "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-  7       "trace.server": "verbose",
-  8       "rootPatterns": [".ccls", "compile_commands.json"],
-  9       "initializationOptions": {
- 10          "cache": {
- 11            "directory": "/tmp/ccls"
- 12          },
- 13          "client": {
- 14           "snippetSupport": true
- 15          }
- 16        }
- 17     }
- 18   },
- 19   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/cl
- 20 }
+   "languageserver": {
+       "ccls": {
+         "command": "ccls",
+         "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+         "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+         "trace.server": "verbose",
+         "rootPatterns": [".ccls", "compile_commands.json"],
+         "initializationOptions": {
+           "cache": {
+             "directory": "/tmp/ccls"
+           },
+           "client": {
+            "snippetSupport": true
+           }
+         }
+      }
+    },
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/cl
+  }
 
 Optional : brew install bear
